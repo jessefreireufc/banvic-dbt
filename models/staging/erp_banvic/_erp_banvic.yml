@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: erp
+    schema: erp_banvic
+    tables:
+      - name: localidades
+      - name: clientes
+      - name: contas
+      - name: agencias
+      - name: colaboradores
+      - name: colaborador_agencia
+      - name: propostas_credito
+      - name: transacoes
