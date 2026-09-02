@@ -1,0 +1,9 @@
+models:
+  - name: dim_colaboradores
+    description: Modelo dimensão de colaboradores.
+    columns:
+      - name: pk_colaborador
+        description: Chave primária do colaborador.
+        data_tests:
+          - unique
+          - not_null

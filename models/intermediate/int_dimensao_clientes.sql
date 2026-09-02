@@ -4,12 +4,12 @@ clientes as (
     from {{ ref('stg_erp__clientes') }}
 ),
 
-, localidades as (
+localidades as (
     select *
     from {{ ref('stg_erp__localidades') }}
 ),
 
-, clientes_enriquecido as (
+clientes_enriquecido as (
     select
         clientes.pk_cliente
         , clientes.nome_cliente
