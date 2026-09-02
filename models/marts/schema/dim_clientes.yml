@@ -1,0 +1,9 @@
+models:
+  - name: dim_clientes
+    description: Modelo dimensão de clientes.
+    columns:
+      - name: pk_cliente
+        description: Chave primária do cliente.
+        data_tests:
+          - unique
+          - not_null
