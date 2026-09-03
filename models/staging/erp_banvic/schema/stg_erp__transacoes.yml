@@ -1,0 +1,9 @@
+models:
+  - name: stg_erp__transacoes
+    description: Modelo de staging de transações.
+    columns:
+      - name: pk_transacao
+        description: Chave primária da transação.
+        data_tests:
+          - unique
+          - not_null
