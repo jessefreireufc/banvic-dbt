@@ -1,0 +1,9 @@
+models:
+  - name: dim_datas
+    description: Modelo dimensão de datas.
+    columns:
+      - name: pk_data
+        description: Chave primária da data.
+        data_tests:
+          - unique
+          - not_null

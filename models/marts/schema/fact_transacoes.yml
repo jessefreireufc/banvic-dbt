@@ -1,0 +1,9 @@
+models:
+  - name: fact_transacoes
+    description: Modelo fato de transações.
+    columns:
+      - name: pk_transacao
+        description: Chave primária da transação.
+        data_tests:
+          - unique
+          - not_null
