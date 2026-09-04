@@ -22,6 +22,16 @@ criar_datas as (
             when extract(dow from date_day) in (0, 6) then true
             else false
         end as is_final_de_semana
+        , dayofyear(date_day) as dia_ano
+        , case dayname(date_day)
+            when 'Monday' then 'segunda-feira'
+            when 'Tuesday' then 'terça-feira'
+            when 'Wednesday' then 'quarta-feira'
+            when 'Thursday' then 'quinta-feira'
+            when 'Friday' then 'sexta-feira'
+            when 'Saturday' then 'sábado'
+            when 'Sunday' then 'domingo'
+        end as nome_dia
     from date_spine
 )
 

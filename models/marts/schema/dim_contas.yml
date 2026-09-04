@@ -1,0 +1,9 @@
+models:
+  - name: dim_contas
+    description: Modelo dimensão de contas.
+    columns:
+      - name: pk_conta
+        description: Chave primária da conta.
+        data_tests:
+          - unique
+          - not_null

@@ -10,6 +10,8 @@ renomeado as (
         , nome as nome_agencia
         , tipo_agencia as tipo_agencia
         , cast(cod_localidade as int) as fk_localidade
+        , endereco as endereco
+        , cast(data_abertura as date) as data_abertura
     from fonte_agencias
 )
 

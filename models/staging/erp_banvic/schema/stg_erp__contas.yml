@@ -1,0 +1,9 @@
+models:
+  - name: stg_erp__contas
+    description: Modelo de staging de contas.
+    columns:
+      - name: pk_conta
+        description: Chave primária da conta.
+        data_tests:
+          - unique
+          - not_null

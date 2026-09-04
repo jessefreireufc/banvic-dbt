@@ -16,6 +16,8 @@ agencias_enriquecido as (
         , agencias.tipo_agencia
         , localidades.cidade as cidade_agencia
         , localidades.uf as uf_agencia
+        , agencias.endereco as endereco
+        , agencias.data_abertura as abertura
     from agencias
     left join localidades on agencias.fk_localidade = localidades.pk_localidade
 )
