@@ -25,6 +25,8 @@ fato_transacoes as (
         , transacoes.ts_transacao
         , transacoes.nome_transacao
         , transacoes.valor_transacao
+        , contas.numero_conta as num_conta
+        , contas.saldo_total as saldo
     from transacoes
     left join contas on transacoes.fk_conta = contas.pk_conta
     left join datas on cast(transacoes.ts_transacao as date) = datas.dt_data
