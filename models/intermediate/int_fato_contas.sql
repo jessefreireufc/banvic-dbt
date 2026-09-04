@@ -16,4 +16,4 @@ selecionar_colunas as (
 )
 
 select *
-from contas
+from selecionar_colunas
